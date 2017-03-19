@@ -81,6 +81,7 @@ function countNeighbor(i, j, world){
 
 }
 
+
 // MAIN global
 
 var canvas = initWorld();
@@ -94,7 +95,7 @@ printWorld(canvas);
 var genCounter = 1;
 setInterval(function() {
 	canvas = deadOrAlive(canvas);   // gives us the new generation	
-    console.log(genCounter+". Generation: "); 
+  console.log(genCounter+". Generation: "); 
 	printWorld(canvas);
 	genCounter++;
     
